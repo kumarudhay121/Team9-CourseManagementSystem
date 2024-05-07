@@ -97,6 +97,10 @@
             height: 100%;
             width: 100%;
         }
+        img{
+        height: 100%;
+        width: 100%;
+        }
     </style>
 </head>
 <body class="dark-mode">
@@ -137,34 +141,50 @@
         </div>
     </section>
 
-
+    
     <section class="features py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="feature text-center">
-                        <video src="resources/videos/Feature1.mp4" class="video-fluid feature-video" autoplay loop muted></video>
-                        <h3 class ="text-light">Come for the training, stay for the experience</h3>
-                        <p class ="text-light">An intuitive interface means training feels right from the very first click. And with easy access on any device, learners jump in anytime, anywhere. Feel good introducing a tool that people actually use.</p>
+            <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="feature text-center">
+                                    <video src="resources/videos/Feature1.mp4" class="video-fluid feature-video" autoplay loop muted></video>
+                                    <h3 class="text-light">Come for the training, stay for the experience</h3>
+                                    <p class="text-light">An intuitive interface means training feels right from the very first click. And with easy access on any device, learners jump in anytime, anywhere. Feel good introducing a tool that people actually use.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature text-center">
+                                    <video src="resources/videos/Feature2.mp4" class="video-fluid feature-video" autoplay loop muted></video>
+                                    <h3 class="text-light">Ready to go, right out of the box</h3>
+                                    <p class="text-light">Skip the months-long setup times that cause your training programs to just fizzle out. Create new courses with a few simple clicks, add users, and go live by the end of the day.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature text-center">
+                                    <img src="resources/images/Feature3.gif" class="" alt="Feature Image">
+                                    <h3 class="text-light">Matches your style, speaks their language</h3>
+                                    <p class="text-light">Teams embrace training when it is relevant. Personalize their experience to match your branding and localize to your user languages for training that feels like it is built just for them.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Add more carousel items as needed -->
                 </div>
-                <div class="col-md-4">
-                    <div class="feature text-center">
-                        <video src="resources/videos/Feature2.mp4" class="video-fluid feature-video" autoplay loop muted></video>
-                        <h3 class ="text-light">Ready to go, right out of the box</h3>
-                        <p class ="text-light">Skip the months-long setup times that cause your training programs to just fizzle out. Create new courses with a few simple clicks, add users, and go live by the end of the day.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature text-center">
-                        <video src="resources/videos/Feature3.MOV" class="video-fluid feature-video" autoplay loop muted></video>
-                        <h3 class ="text-light">Matches your style, speaks their language</h3>
-                        <p class ="text-light">Teams embrace training when it is relevant. Personalize their experience to match your branding and localize to your user languages for training that feels like it is built just for them.</p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featureCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featureCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
+    
 
     <section class="reviews py-5">
         <div class="container">
