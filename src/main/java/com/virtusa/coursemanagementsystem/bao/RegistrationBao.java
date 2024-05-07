@@ -1,4 +1,4 @@
-package com.backend.bao;
+package com.virtusa.coursemanagementsystem.bao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,6 +1,6 @@
 package com.virtusa.coursemanagementsystem.controller;
 
-import com.backend.bao.RegistrationBao;
+import com.virtusa.coursemanagementsystem.bao.RegistrationBao;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
