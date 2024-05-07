@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="C:\Users\priyanshuroy\Backend\src\main\webapp\indexStyles.css">
     <style>
         /* Dark mode styles */
-        body.dark-mode {
+        body {
             background-color: #121212;
             color: #fff;
         }
@@ -55,7 +55,7 @@
 
         /* Footer Styles */
         footer {
-            background-color: #000;
+            background-color: #121212;
             color: #fff;
         }
 
@@ -63,6 +63,7 @@
         .faq-feedback-contact {
             background-color: #121212;
             color: #fff;
+            bs-bg-opacity: 0;
         }
 
         .faq-feedback-contact h3 {
@@ -105,7 +106,7 @@
         }
     </style>
 </head>
-<body class="dark-mode">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
@@ -231,34 +232,76 @@
         </div>
     </section>
 
+   <section class="faq-feedback-contact py-5 bg-dark text-light">
+       <div class="container">
+        <h3 class="card-title text-light text-center">FAQs</h3>
+           <div class="row">
+               <div class="col-md-4">
+                   <div class="card bg-dark">
+                       <div class="card-body">
+                           <ul class="card-text text-light">
+                               <li><strong>Q: What courses are available?</strong><br>A: LearnSphere offers a wide range of courses covering topics such as programming, data science, business management, and more. You can explore our course catalog to find the courses that best suit your interests and career goals.</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="card bg-dark">
+                       <div class="card-body">
+                           <ul class="card-text text-light">
+                               <li><strong>Q: How do I enroll in a course?</strong><br>A: To enroll in a course, simply browse our course catalog, select the course you're interested in, and click on the "Enroll" button. Follow the prompts to complete the enrollment process, and you'll gain access to the course materials.</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="card bg-dark">
+                       <div class="card-body">
+                           <ul class="card-text text-light">
+                               <li><strong>Q: Is there a mobile app available?</strong><br>A: Yes, LearnSphere offers a mobile app available for both iOS and Android devices. You can download the app from the App Store or Google Play Store to access your courses on the go.</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+  <section class="faq-feedback-contact py-5 bg-dark text-light">
+      <div class="container">
+          <div class="row justify-content-center"> <!-- Updated: Added justify-content-center -->
+              <div class="col-md-4">
+                  <div class="card bg-dark">
+                      <div class="card-body">
+                          <h3 class="card-title text-light">Feedback</h3>
+                          <p class="card-text text-light">We value your feedback. Please let us know how we can improve your learning experience.</p>
+                      </div>
+                      <div class="card-body">
+                          <h3 class="card-title text-light">Contact Information</h3>
+                          <p class="card-text text-light">If you have any queries or need assistance, feel free to contact us:</p>
+                          <ul class="text-light">
+                              <li>Email: info@learnsphere.com</li>
+                              <li>Phone: +91-123-456-7890</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
 
-    <section class="faq-feedback-contact py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="text-light">FAQs</h3>
-                    <ul class="text-light">
-                        <li>What courses are available?</li>
-                        <li>How do I enroll in a course?</li>
-                        <li>Is there a mobile app available?</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="text-light">Feedback</h3>
-                    <p class="text-light">We value your feedback. Please let us know how we can improve your learning experience.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="text-light">Contact Information</h3>
-                    <p class="text-light">If you have any queries or need assistance, feel free to contact us:</p>
-                    <ul class="text-light">
-                        <li>Email: info@learnsphere.com</li>
-                        <li>Phone: +91-123-456-7890</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+   <section class="faq-feedback-contact py-5 bg-dark text-light">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4">
+                   <div class="card bg-dark">
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
 
 
 
