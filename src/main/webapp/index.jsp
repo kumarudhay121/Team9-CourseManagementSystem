@@ -164,7 +164,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="feature text-center">
-                                    <img src="resources/images/Feature3.gif" class="" alt="Feature Image">
+                                    <img src="https://www.chrp-india.com/wp-content/uploads/2020/03/anim-1-1.gif" class="" alt="Feature Image">
                                     <h3 class="text-light">Matches your style, speaks their language</h3>
                                     <p class="text-light">Teams embrace training when it is relevant. Personalize their experience to match your branding and localize to your user languages for training that feels like it is built just for them.</p>
                                 </div>

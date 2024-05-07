@@ -1,4 +1,4 @@
-package com.backend.controller;
+package com.virtusa.coursemanagementsystem.controller;
 
 import com.virtusa.coursemanagementsystem.dao.LoginDao;
 

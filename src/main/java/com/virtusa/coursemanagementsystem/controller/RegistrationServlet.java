@@ -1,4 +1,4 @@
-package com.backend.controller;
+package com.virtusa.coursemanagementsystem.controller;
 
 import com.backend.bao.RegistrationBao;
 import java.io.IOException;

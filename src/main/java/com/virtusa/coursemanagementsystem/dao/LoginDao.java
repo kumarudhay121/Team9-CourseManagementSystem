@@ -1,4 +1,4 @@
-package com.backend.dao;
+package com.virtusa.coursemanagementsystem.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

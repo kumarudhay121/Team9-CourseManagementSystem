@@ -1,4 +1,4 @@
-package com.backend.dto;
+package com.virtusa.coursemanagementsystem.dto;
 
 public class UserDto {
     private String name;

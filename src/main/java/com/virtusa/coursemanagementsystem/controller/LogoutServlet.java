@@ -1,4 +1,4 @@
-package com.backend.controller;
+package com.virtusa.coursemanagementsystem.controller;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
