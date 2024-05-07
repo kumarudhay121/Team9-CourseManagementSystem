@@ -2,17 +2,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Login</title>
+    <title>Login</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- MIUI CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/miuicss@3.0.0-beta.29/dist/mui.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/miuicss@3.0.0-beta.29/dist/mui.dark.min.css" rel="stylesheet">
+    <!-- MIUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/miuicss@3.0.0-beta.29/dist/mui-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg?w=900&t=st=1715086731~exp=1715087331~hmac=3fb8d445c8cccf473aa984bae334eacc21ee334d090b5e4d25d34f32580af456');
+            background-size: cover;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust the last value (0.5) to change the transparency level */
+        }
+    </style>
 </head>
-<body class="bg-light">
+<body>
     <div class="container mt-5">
         <div class="card w-50 mx-auto">
             <div class="card-body">
-                <h5 class="card-title text-center mb-4">User Login</h5>
+                <h2 class="card-title text-center mb-4">Login</h5>
                 <form action="login" method="post">
                     <div class="mb-3">
                         <input type="text" class="form-control" name="username" placeholder="Username" required>
@@ -21,9 +34,10 @@
                         <input type="password" class="form-control" name="password" placeholder="Password" required>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary">Login <i class="mii-arrow-right"></i></button>
                     </div>
                 </form>
+                <p class="text-center mt-3">Don't have an account? <a href="registration.jsp">Register <i class="mii-arrow-right-circle-fill"></i></a></p>
             </div>
         </div>
     </div>
