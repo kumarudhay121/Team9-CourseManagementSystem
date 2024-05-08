@@ -10,20 +10,17 @@ public class RegistrationBao {
         try {
             // Establish database connection
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/learnsphere", "root", "root");
-
             // Create SQL statement
-            String sql = "INSERT INTO user (name, phone, username, email, user_password, usertype) VALUES (?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO user (name, phone, username, email, user_password) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement statement = conn.prepareStatement(sql);
             statement.setString(1, name);
             statement.setString(2, phone);
             statement.setString(3, username);
             statement.setString(4, email);
             statement.setString(5, password);
-            statement.setString(6, userType);
-
             // Execute SQL statement
             statement.executeUpdate();
-
+            System.out.println("query executed");
             // Close database connection
             conn.close();
         } catch (SQLException e) {

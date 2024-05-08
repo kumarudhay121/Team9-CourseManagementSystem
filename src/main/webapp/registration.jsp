@@ -23,6 +23,8 @@
     </style>
 </head>
 <body>
+    <% String msg=(String)request.getAttribute("errorMessage"); %>
+
     <div class="container mt-5">
         <div class="card w-50 mx-auto">
             <div class="card-body">
