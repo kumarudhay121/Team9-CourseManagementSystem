@@ -32,6 +32,9 @@
                         <a class="nav-link" href="#">Courses</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Transactions</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="logout">Logout</a> <!-- Logout link -->
                     </li>
                 </ul>

@@ -29,6 +29,12 @@
                         <a class="nav-link" href="#">My Courses</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Transactions</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="logout">Logout</a> <!-- Logout link -->
                     </li>
                 </ul>
@@ -40,14 +46,15 @@
         <h1>Welcome, <span class="text-primary">Student!</span></h1>
         <p>Here's some information about you:</p>
         <!-- Display user profile details (e.g., name, email, etc.) -->
-        <p>Name: John Doe</p>
-        <p>Email: john@example.com</p>
+        <p>Name: Priyanshu Roy</p>
+        <p>Email: priyanshu@learn.com</p>
 
         <h2>Enrolled Courses</h2>
         <!-- Display enrolled courses -->
         <ul>
-            <li>Course 1</li>
-            <li>Course 2</li>
+            <li>React</li>
+            <li>Spring Boot</li>
+            <li>Hibernate</li>
             <!-- Add more courses as needed -->
         </ul>
     </div>

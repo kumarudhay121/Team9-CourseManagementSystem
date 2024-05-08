@@ -17,13 +17,20 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
-            // Check if user exists
+            // Check if user exists and get user type
             boolean isValidUser = LoginDao.validateUser(username, password);
+            String userType = LoginDao.getUserType(username); // Assuming this method exists
 
             if (isValidUser) {
                 // Redirect to respective dashboard based on user type
-                // Here you can implement logic to fetch user details from database if needed
-                response.sendRedirect("adminDashboard.jsp"); // Assuming admin dashboard
+                if ("admin".equals(userType)) {
+                    response.sendRedirect("adminDashboard.jsp");
+                } else if ("student".equals(userType)) {
+                    response.sendRedirect("studentDashboard.jsp");
+                } else {
+                    // Handle other user types or unknown types
+                    response.sendRedirect("login.jsp");
+                }
             } else {
                 // Invalid credentials, redirect back to login page
                 response.sendRedirect("login.jsp");

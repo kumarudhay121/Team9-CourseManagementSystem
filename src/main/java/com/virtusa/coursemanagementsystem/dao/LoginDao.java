@@ -32,4 +32,38 @@ public class LoginDao {
             throw e; // Rethrow the exception to be handled by the caller
         }
     }
+
+    public static String getUserType(String username) throws SQLException {
+        try {
+            // Establish database connection
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/learnsphere", "root", "root");
+
+            // Create SQL statement
+            String sql = "SELECT usertype FROM user WHERE username = ?";
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1, username);
+
+            // Execute SQL statement
+            ResultSet resultSet = statement.executeQuery();
+
+            // Check if user exists
+            if (resultSet.next()) {
+                // Retrieve user type
+                String userType = resultSet.getString("usertype");
+
+                // Close database connection
+                conn.close();
+
+                return userType;
+            } else {
+                // Close database connection
+                conn.close();
+
+                // User not found
+                return null;
+            }
+        } catch (SQLException e) {
+            throw e; // Rethrow the exception to be handled by the caller
+        }
+    }
 }
