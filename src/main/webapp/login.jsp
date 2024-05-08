@@ -12,7 +12,7 @@
     <!-- Custom CSS -->
     <style>
         body {
-            background-image: url('https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg?w=900&t=st=1715086731~exp=1715087331~hmac=3fb8d445c8cccf473aa984bae334eacc21ee334d090b5e4d25d34f32580af456');
+            background-image: url('https://1.bp.blogspot.com/-twNnXhkBlas/U2BZcgO76zI/AAAAAAABotc/8wadEAYo0pM/s400/6.gif');
             background-size: cover;
         }
 

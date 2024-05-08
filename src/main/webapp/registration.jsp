@@ -24,7 +24,12 @@
 </head>
 <body>
     <% String msg=(String)request.getAttribute("errorMessage"); %>
-
+    <script>
+            // JavaScript block to display alert if msg is not null
+            <% if(msg != null) { %>
+                alert("<%= msg %>");
+            <% } %>
+        </script>
     <div class="container mt-5">
         <div class="card w-50 mx-auto">
             <div class="card-body">

@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 public class RegistrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Retrieve form data
-        System.out.println("reg jsp to servlet");
         String name = request.getParameter("name");
         String phone = request.getParameter("phone");
         String username = request.getParameter("username");
@@ -25,31 +24,26 @@ public class RegistrationServlet extends HttpServlet {
         StringBuilder errorMessage = new StringBuilder();
 
         if (!isValidName(name)) {
-            System.out.println("name");
             errorMessage.append("Name is required. ");
             isValid = false;
         }
 
         if (!isValidPhone(phone)) {
-            System.out.println("phone");
             errorMessage.append("Phone number must be 10 digits. ");
             isValid = false;
         }
 
         if (!isValidUsername(username)) {
-            System.out.println("username");
             errorMessage.append("Username is required. ");
             isValid = false;
         }
 
         if (!isValidEmail(email)) {
-            System.out.println("email");
             errorMessage.append("Invalid email format. ");
             isValid = false;
         }
 
         if (!isValidPassword(password)) {
-            System.out.println("password");
             errorMessage.append("Password must be at least 8 characters long. ");
             isValid = false;
         }
@@ -64,7 +58,6 @@ public class RegistrationServlet extends HttpServlet {
 
         try {
             // Call BAO to register user
-            System.out.println("In reg servlet");
             RegistrationBao.registerUser(name, phone, username, email, password, userType);
 
             // Redirect to login page
@@ -92,7 +85,7 @@ public class RegistrationServlet extends HttpServlet {
     }
 
     private boolean isValidPassword(String password) {
-        return password != null && password.length() >= 8;
+        return password != null && password.length() >= 6;
     }
 
 }
